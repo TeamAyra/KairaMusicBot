@@ -128,7 +128,7 @@ async def start_comm(client, message: Message, _):
         if name[0:3] == "del":
             await del_plist_msg(client=client, message=message, _=_)
         if name == "verify":
-            await message.reply_text(f"Hey {message.from_user.first_name},\nThanks For Verifying Yourself In {config.MUSIC_BOT_NAME}, Now You Can Go Back And Start Using Me And Checkout Our Chatting Group @The_Chatting_Hub ♡︎")
+            await message.reply_text(f"Hey {message.from_user.first_name},\nThanks For Verifying Yourself In {config.MUSIC_BOT_NAME}, Now You Can Go Back And Start Using Me And Also Checkout Our Support Channel @AyraUpdates ♡︎")
             if await is_on_off(config.LOG):
                 sender_id = message.from_user.id
                 sender_name = message.from_user.first_name
